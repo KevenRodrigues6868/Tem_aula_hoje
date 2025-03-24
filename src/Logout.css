@@ -1,0 +1,104 @@
+/* Resetando margens e preenchimentos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Layout principal */
+  .dashboard {
+    display: flex;
+    height: 100vh; /* Garante que ocupe toda a altura da tela */
+    width: 100vw; /* Ocupa toda a largura */
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    width: 250px;
+    background-color: #ffffff;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    box-shadow: 4px 0 10px rgba(0, 0, 0, 0.2);
+    height: 100vh; /* Ocupa a altura total da tela */
+    position: fixed; /* Mantém a sidebar fixa */
+    left: 0;
+    top: 0;
+  }
+  
+  /* Botão do menu */
+  .menu-button {
+    background: none;
+    border: none;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+  }
+  
+  /* Dropdown menu */
+  .dropdown-menu {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 5px;
+  }
+  
+  .menu-item {
+    background: none;
+    border: none;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+  }
+  
+  .menu-item:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  
+  /* Botão de Logout */
+  .logout-button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .logout-button:hover {
+    background-color: #cc0000;
+  }
+  
+  .content {
+    flex: 1;
+    margin-left: 250px; /* Garante que não fique sobre a sidebar */
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Faz com que os itens fiquem em coluna */
+    align-items: flex-start; /* Alinha o texto à esquerda */
+    justify-content: center; /* Mantém o conteúdo no centro verticalmente */
+    width: calc(100vw - 250px); /* Ajusta para ocupar o espaço disponível */
+    height: 100vh; /* Ocupa toda a altura da tela */
+  }
+  
+  .content h2 {
+    margin-bottom: 10px; /* Espaço entre o título e o parágrafo */
+  }
