@@ -1,4 +1,4 @@
-import Login from './Login';
+import Login from './login';
 import Logout from './Logout';
 import { auth } from '../firebaseConfig';
 import { useState, useEffect } from 'react';
